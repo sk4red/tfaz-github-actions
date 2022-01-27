@@ -4,15 +4,15 @@
 
 variable "location" {
   type    = string
-  default = "eastus"
+  default = "uksouth"
 }
 
 variable "naming_prefix" {
   type    = string
-  default = "adolabs"
+  default = "sk4red"
 }
 
 variable "github_repository" {
   type    = string
-  default = "ado-labs-github-actions"
+  default = "tfaz-github-actions"
 }
