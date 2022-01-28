@@ -9,8 +9,8 @@ on:
   pull_request:
     branches:
       - main
-    paths-ignore:
-      - 'terraform.yml'
+    paths:
+      - '!terraform.yml'
       
 env:
   TF_LOG: INFO
