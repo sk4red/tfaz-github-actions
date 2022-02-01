@@ -1,7 +1,17 @@
 name: 'Terraform'
 
-on: [push, pull_request]
-
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '!terraform.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '!terraform.yml'
+      
 env:
   TF_LOG: INFO
 
