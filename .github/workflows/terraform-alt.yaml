@@ -43,7 +43,7 @@ jobs:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'init'
         tf_actions_working_dir: "./main"
-        args: '-backend-config="storage_account_name=${{ secrets.STORAGE_ACCOUNT }}" -backend-config="container_name=${{ secrets.CONTAINER_NAME }}" -backend-config="resource_group_name=${{ secrets.RESOURCE_GROUP }"'
+        args: '-backend-config="storage_account_name=${{ secrets.STORAGE_ACCOUNT }}" -backend-config="container_name=${{ secrets.CONTAINER_NAME }}" -backend-config="resource_group_name=${{ secrets.RESOURCE_GROUP }}"'
  
     - name: 'Terraform Validate'
       uses: hashicorp/terraform-github-actions@master
