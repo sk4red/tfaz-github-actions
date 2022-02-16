@@ -4,12 +4,12 @@
 
 variable "location" {
   type    = string
-  default = "eastus"
+  default = "uksouth"
 }
 
 variable "naming_prefix" {
   type    = string
-  default = "adolabs"
+  default = "sk4red"
 }
 
 variable "asp_tier" {
@@ -21,7 +21,7 @@ variable "asp_tier" {
 variable "asp_size" {
   type        = string
   description = "Size for App Service Plan (F1, S2, P1v2)"
-  default     = "S1"
+  default     = "F1"
 }
 
 variable "capacity" {
