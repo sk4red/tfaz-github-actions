@@ -1,6 +1,6 @@
-# Azure DevOps Labs - GitHub Actions with Terraform
+# GitHub Actions with Terraform
 
-Howdy there! These are the demo files to accompany the [Azure DevOps Lab video GitHub Actions with Terraform.](https://youtu.be/QcBtWX72dRw) This demo includes the following:
+This demo includes the following:
 
 * Terraform code to deploy an instance of App Services on Microsoft Azure
 * GitHub Actions to manage the deployment of Terraform code
@@ -13,8 +13,6 @@ If you'd like to follow along you'll need the following:
 * An Azure storage account and container
   * Instructions included below to create the storage account
 * A GitHub account and a forked instance of this repository
-* The drive to be awesome!
-  * Oh wait, you already ARE **awesome**! Well done.
 
 ## Creating the Azure AD Service Principal and Storage Account
 
