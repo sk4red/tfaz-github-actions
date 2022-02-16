@@ -1,22 +1,7 @@
 name: 'Terraform'
 
-<<<<<<< HEAD
 on: workflow_dispatch
 
-=======
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - '!terraform.yml'
-  pull_request:
-    branches:
-      - main
-    paths:
-      - '!terraform.yml'
-      
->>>>>>> 8693ef8b649686bd91d89bc2afaf52bc54bd2437
 env:
   TF_LOG: INFO
 
