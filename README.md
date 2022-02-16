@@ -45,7 +45,7 @@ cd remote_setup
 # Initialize and apply the code
 # If you use a different repository name, you'll need to specify -var=github_repository=NAME_OF_YOUR_REPO
 terraform init
-terraform apply -auto-approve # Because we live on the edge!
+terraform apply -auto-approve 
 ```
 
 At this point your GitHub repository is all set for you to kick off a GitHub Action. Actions are triggered by any `push` or `pull_request` event that happens in the repo. Pushing an updated version from your local desktop should trigger it. The Action will do the following:
