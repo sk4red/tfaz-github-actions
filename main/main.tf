@@ -40,15 +40,16 @@ resource "azurerm_app_service" "app_service" {
   location            = azurerm_resource_group.app_service.location
   resource_group_name = azurerm_resource_group.app_service.name
   app_service_plan_id = azurerm_app_service_plan.app_service.id
-  
-  site_config {
-    scm_type = "GitHub"
+
+  lifecycle {
+    ignore_changes = [site_config.0.scm_type]
   }
   
-  source_control {
-    repo_url           = "https://github.com/sk4red/DevOpsDemo"
-    branch             = "main"
-    manual_integration = true
-    use_mercurial      = false
-  }
+}
+
+resource "azurerm_app_service_source_control" "app_service" {
+  app_service_id        = azurerm_app_service.app_service.id
+  repo_url              = "https://github.com/sk4red/DevOpsDemo"
+  is_manual_integration = true
+  branch                = "main"
 }
