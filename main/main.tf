@@ -42,7 +42,7 @@ resource "azurerm_app_service" "app_service" {
   app_service_plan_id = azurerm_app_service_plan.app_service.id
   
   site_config {
-    scm_type = "ExternalGit"
+    scm_type = "GitHub"
   }
   
   source_control {
